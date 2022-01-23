@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    
+    <title>Silly story generator</title>
+
+    <style>
+    .Outfit-light{
+        font-family: Outfit,sans-serif;
+        font-family: 100;
+    }
+    .Outfit-heavy{
+        font-family: Outfit,sans-serif;
+         font-family: 300;
+    }
+    h1{
+      text-align: center;
+      width: 100%;
+      margin: 2em 0;
+      letter-spacing: 0.10em;
+      word-spacing: 0.3em;
+    }
+    body {
+      font-family: Outfit, sans-serif;
+      margin:0;
+      background: rgb(26, 0, 41);
+      color:white;
+    }
+    main{
+      width: 80%;
+      margin: 0 auto;
+    }
+    label {
+      font-weight: bold;  
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 50%;
+      margin: 1em 0;
+      }
+     div {
+      padding-bottom: 20px;
+    }
+
+    input[type="text"] {
+      padding: 5px;
+      width: fit-content;
+      justify-self: end;
+      border:none;
+      outline: none;
+      color:white;
+      background:transparent;
+      border-bottom: 1px solid rgb(145, 255, 0);
+
+      padding-bottom: 1em;
+      
+    }
+
+   input[type="text"]:focus{
+       border-bottom-width: 2px;
+   }
+    .randomize{
+      margin: 3em auto 1em auto;
+      font-size: 1.2rem;
+      padding: 0.6em 0.6em;
+      border:none;
+      background-color:transparent;
+      color:white;
+      display: block;
+      outline: 1px solid white;
+      transition: background-color 0.10s ease-out, outline-color 0.10s ease-out;
+    }
+     .randomize:hover{
+      background:rgba(145, 255, 0,0.6);
+      cursor: pointer;
+      outline-color: rgba(145, 255, 0,0.6);
+     }
+     h2{
+       box-sizing: border-box;
+       padding:0.3em 2em 0.3em 0.2em;
+       color:black;
+       background:white;
+       width: fit-content;
+       margin-bottom: 0;
+
+     }
+    p {
+      margin-top: 0;
+      background: transparent;
+      color: white;
+      padding: 10px;
+     border: 1px solid white;
+    }
+  
+
+    </style>
+  </head>
+
+  <body>
+    <h1 class="Outfit-heavy">Silly Story Generator</h1>
+    <main>
+    <div class="input-group">
+      <label for="customname">Enter custom name:
+      <input id="customname" type="text" placeholder="">
+      </label>
+       <label for="customvar">Enter the name to look for:
+       <input id="customvar" type="text">
+      </label>
+    </div>
+
+    <div>
+      <button class="randomize Outfit-heavy">Generate random story</button>
+    </div>
+    <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+    <h2>The Story:</h2>
+    <p class="story" contenteditable="true">Florence Nightingale was a nurse who saved many lives in the 19th
+        century. She was named after the city of Florence in Italy, where her
+        parents went after they got married in 1818. Her family was rich and
+        they had two homes in Britain as well as servants.
+        Florence was an unusual young woman for her time because she
+        didn’t want to go to parties and get married. She wanted to be a nurse and help people. Her family
+        didn’t want her to become a nurse because hospitals back then were dirty, horrible places. They
+        were worried about her. In 1851, Florence went to Germany and learned all about nursing. It was hard
+        work, but she loved it.
+        In 1854, lots of British soldiers went to fight in the Crimean War. Army hospitals were filled with injured
+        men, but there were no nurses and many men died. Florence and a team of nurses went to help.
+        Florence worked 20 hours a day to make the army hospital a cleaner and safer place. She brought
+        the men fresh food, she cleaned the hospital beds and she used clean bandages on the wounded
+        soldiers. Soon, fewer men were dying.
+        At night, Florence walked around the hospital. She talked to the injured soldiers and helped the men
+        to write letters to their families. She carried a lamp and the soldiers called her ‘The lady with the
+        lamp’.
+        When Florence returned to England, people called her a heroine because of her amazing work in the
+        Crimean War. Queen Victoria wrote her a letter to say thank you. She continued to work hard in
+        Britain to improve hospitals and she was given a medal called the Order of Merit. She was the first
+        woman to receive this honour</p>
+      </main>
+  </body>
+</html>
